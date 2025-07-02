@@ -10,7 +10,7 @@ This project is a Streamlit app that performs semantic search over a food datase
 
 Example: 
 
-
+[Streamlit app](https://cookbook-ms-semantic-search-llm-main-bpeqha.streamlit.app/)
 
 ## 📦 Setup
 
