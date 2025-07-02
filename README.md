@@ -32,11 +32,11 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Configure api keys for embedding and gpt responses in 'constants.py':
+4. Configure api for embedding and gpt responses in 'constants.py':
 
 5. [Optional] Precompute the embeddings for the items and queries. See 'embedding_items.ipynb' and 'embedding_queries.ipynb' for details.
  
-7. Run the Streamlit app:
+6. Run the Streamlit app:
 ```bash
 streamlit run main.py
 ```
