@@ -15,11 +15,11 @@ Example:
 ## 📦 Setup
 
 1. Clone this repository and navigate into the folder:
-
+    
 ```bash
-git clone <your-repo-url>
-cd prosus ai_assignment
-``` 
+git clone https://github.com/cookbook-ms/semantic_search_llm.git
+cd semantic_search_llm
+```
 
 2. Create and activate a virtual environment:
 ```bash
