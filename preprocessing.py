@@ -1,7 +1,7 @@
 import pandas as pd 
 import json 
 
-items_file = "5k_items_curated.csv"
+items_file = "data/5k_items_curated.csv"
 
 def build_image_url(image_str):
     return f"https://static.ifood-static.com.br/image/upload/t_low/pratos/{image_str}"
@@ -46,4 +46,4 @@ for _, row in df.iterrows():
     })
     
 cleaned_df = pd.DataFrame(cleaned_items)
-cleaned_df.to_csv("5k_items_cleaned.csv", index=False)
+cleaned_df.to_csv("data/5k_items_cleaned.csv", index=False)

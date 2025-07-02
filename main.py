@@ -27,12 +27,11 @@ with right_col:
 # User Inputs
 @st.cache_data
 def load_stuff(embedding_choice):
-    user_queries = pd.read_csv("queries.csv")["search_term_pt"]
-    index = faiss.read_index(f"index_{embedding_choice}.index")         
-    embedding_array = np.load(f"item_embeddings_{embedding_choice}.npy") 
-    cleaned_df = pd.read_csv("5k_items_cleaned.csv")                               
-    query_embeddings = np.load(f"query_embeddings_{embedding_choice}.npy")
-    
+    user_queries = pd.read_csv("data/queries.csv")["search_term_pt"]
+    index = faiss.read_index(f"data/index_{embedding_choice}.index")         
+    embedding_array = np.load(f"data/item_embeddings_{embedding_choice}.npy") 
+    cleaned_df = pd.read_csv("data/5k_items_cleaned.csv")                               
+    query_embeddings = np.load(f"data/query_embeddings_{embedding_choice}.npy")
     return user_queries, index, embedding_array, cleaned_df, query_embeddings
     
     
